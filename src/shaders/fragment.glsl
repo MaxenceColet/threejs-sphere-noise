@@ -1,5 +1,4 @@
 varying vec2 vUv;
-varying float newPosition;
 uniform vec3 color;
 uniform float time;
 varying float noise;

@@ -16,9 +16,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "gsap": "^3.2.6",
     "stats.js": "^0.17.0",
-    "three": "^0.112.1",
-    "three-orbit-controls": "^82.1.0"
+    "three": "^0.112.1"
   }
 }

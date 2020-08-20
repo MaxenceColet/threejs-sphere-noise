@@ -7,13 +7,9 @@ export default class SmallSphere{
     }
 
     createMesh(){
-        this.geometry = new THREE.IcosahedronGeometry(0.6,3);
+        this.geometry = new THREE.IcosahedronGeometry(0.8,3);
 
-        this.material = new THREE.MeshPhysicalMaterial({
-            roughness: 1,
-            metalness: 0.5,
-            reflectivity: 0.8,
-            flatShading: true,
+        this.material = new THREE.MeshBasicMaterial({
             color: 0x000000
         });
 
@@ -22,13 +18,5 @@ export default class SmallSphere{
         this.scene.add(this.mesh);
         this.startTime = Date.now();
     
-    }
-
-    
-    update(){
-        // this.mesh.rotation.z += 0.01;
-        // this.mesh.rotation.x += 0.01;
-        // this.mesh.rotation.y += 0.01;
-        // this.mesh.rotation.x += 0.04;
     }
 }

@@ -11,20 +11,14 @@ export default class Sphere{
     createMesh(){
         this.geometry = new THREE.IcosahedronGeometry(2,7);
 
-        this.initShader();      
-        this.addLight();  
+        this.initShader();
 
         this.mesh = new THREE.Mesh(this.geometry, this.material);
+        this.mesh.renderOrder = 1;
         this.mesh.rotation.x = -Math.PI / 2;
         this.scene.add(this.mesh);
         this.startTime = Date.now();
     
-    }
-
-    addLight(){
-        this.light = new THREE.PointLight( 0x777777, 1, 1000 );
-        this.light.position.set(0,0,5);
-        this.scene.add(this.light);
     }
 
     initShader(){

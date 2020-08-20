@@ -1,6 +1,5 @@
 varying vec2 vUv;
 uniform float time;
-varying float newPosition;
 varying float noise;
 
 
@@ -67,6 +66,6 @@ float snoise(vec2 v)
 
 void main () {
     vUv = uv;  
-    noise = smoothstep( 0.4, 0.41, snoise(position.xz / 5. + time / 200.0) * 1. );
+    noise = smoothstep( 0.40, 0.45, snoise(position.xz / 5. + time / 200.0) * 1. );
     gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
 }
