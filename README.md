@@ -1,4 +1,4 @@
-# ThreeJS Parcel Starter
+# ThreeJS Sphere Noise
 
 Quick starter for experimenting ThreeJS using Parcel as bundler.
 
